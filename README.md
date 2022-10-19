@@ -25,6 +25,10 @@ Watch the tutorial [here](https://www.youtube.com/watch?v=hoVUmn8ZCOo "Spring Bo
 1. Make a controller package.
 2. @Controller, @GetMapping, "/home" (Hello world!) on your localhost
 3. create & connect dynamic content between template and controller
+4. implement Model Class, use Lombok for Getters/Setters, skip boilerplate
+5. add [Bootstrap](https://getbootstrap.com/ "Bootstrap") CSS and a [Table](https://getbootstrap.com/docs/5.2/content/tables/ "Bootstrap Table")
+6. Make a table temmplate with thymeleaf references
+7. inject array into template
 
 
 # TRIVIA
