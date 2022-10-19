@@ -23,3 +23,4 @@ Using Dependencies:
 ---
 ## Step-by-step
 1. Make a controller package.
+2. @Controller, @Getmapping, "/home" (Hello world!) on your localhost
