@@ -30,7 +30,10 @@ Watch the tutorial [here](https://www.youtube.com/watch?v=hoVUmn8ZCOo "Spring Bo
 6. Make a table temmplate with thymeleaf references
 7. inject array into template
 - - create array in controller
+- - echo array using thymeleaf
 8. Add custom css file and path reference with thymeleaf
+9. Build Service, remove array from controller, put it in service
+10. add Service to controller
 
 
 # TRIVIA
