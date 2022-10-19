@@ -11,10 +11,12 @@ Watch the tutorial [here](https://www.youtube.com/watch?v=hoVUmn8ZCOo "Spring Bo
 - Java
 - Spring 2.7.4
 Using Dependencies:
-[] Lombok
-[] Spring Web
-[] MyBatisframework
-[] H2 database
+|dependencies|
+|:-------:|
+|Lombok|
+|Spring Web|
+|MyBatisframework|
+|H2 database|
 2. Generate, download, locate, unzip and open the project in your IDE
 3. Go to src/main/java/""PROJECT FOLDER NAME"/java-class
 4. click run to test your package in Spring Boot
