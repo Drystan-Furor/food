@@ -25,3 +25,26 @@ Watch the tutorial [here](https://www.youtube.com/watch?v=hoVUmn8ZCOo "Spring Bo
 1. Make a controller package.
 2. @Controller, @GetMapping, "/home" (Hello world!) on your localhost
 3. create & connect dynamic content between template and controller
+
+
+# TRIVIA
+## Abstraction Layers
+```mermaid
+graph TD
+1{Controller / API Layer}
+
+a(Endpoint<br>Validate request<br>Call service<BR>Validate results<br>create HTTP Response)
+1--> |Functions|a
+1--> |Abstraction|x[Abstraction Level 1]
+x -->2{Service/ <br>DomainService Layer}
+
+b(Main Business Logic<br>Domain specific Logic<br>calls DAO:Database Access Object<br>other services<br>3rd party API's<br>)
+2--> |Functions|b
+2--> |Abstraction|Y[Abstraction Level 2]
+Y --> 3
+
+3{Data Access Layer}
+c(Access to Database<BR>ORM: Object Relational Mapping)
+3--> |Functions|c
+
+```
