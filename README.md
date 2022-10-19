@@ -29,6 +29,8 @@ Watch the tutorial [here](https://www.youtube.com/watch?v=hoVUmn8ZCOo "Spring Bo
 5. add [Bootstrap](https://getbootstrap.com/ "Bootstrap") CSS and a [Table](https://getbootstrap.com/docs/5.2/content/tables/ "Bootstrap Table")
 6. Make a table temmplate with thymeleaf references
 7. inject array into template
+- - create array in controller
+8. Add custom css file and path reference with thymeleaf
 
 
 # TRIVIA
