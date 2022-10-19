@@ -18,3 +18,8 @@ Using Dependencies:
 2. Generate, download, locate, unzip and open the project in your IDE
 3. Go to src/main/java/""PROJECT FOLDER NAME"/java-class
 4. click run to test your package in Spring Boot
+5. check your POM.XML for dependencies
+
+---
+## Step-by-step
+1. Make a controller package.
