@@ -34,6 +34,8 @@ Watch the tutorial [here](https://www.youtube.com/watch?v=hoVUmn8ZCOo "Spring Bo
 8. Add custom css file and path reference with thymeleaf
 9. Build Service, remove array from controller, put it in service
 10. add Service to controller
+11. H2 database Configuration
+12. create mapper to replace hardcoded array of food
 
 
 # TRIVIA

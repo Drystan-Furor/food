@@ -1,17 +1,22 @@
 package tutorial.food.service;
 
 import org.springframework.stereotype.Service;
+import tutorial.food.mapper.FoodMapper;
 import tutorial.food.model.Food;
 
 @Service
 public class FoodService {
 
+    private FoodMapper foodMapper;
+
+    public FoodService(FoodMapper foodMapper) {
+        this.foodMapper = foodMapper;
+    }
+
+
     public Food[] getFoods(){
-        double price;
-        String name;
-        Food[] foods = {new Food(name="Burrito", price=3.25),
-                new Food(name="Kapsalon", price=9.50),
-                new Food(name="Water", price=2.00)};
+
+        Food[] foods = foodMapper.selectFoods();
 
         return foods;
     }

@@ -12,6 +12,7 @@ import java.math.BigDecimal;
 @Getter
 @Setter
 public class Food {
+    private Integer id;
     private String name;
     private double price;
 }
