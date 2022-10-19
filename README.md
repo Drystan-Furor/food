@@ -24,3 +24,4 @@ Watch the tutorial [here](https://www.youtube.com/watch?v=hoVUmn8ZCOo "Spring Bo
 ## Step-by-step
 1. Make a controller package.
 2. @Controller, @GetMapping, "/home" (Hello world!) on your localhost
+3. create & connect dynamic content between template and controller
