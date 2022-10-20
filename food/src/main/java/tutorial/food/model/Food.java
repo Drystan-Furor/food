@@ -14,5 +14,5 @@ import java.math.BigDecimal;
 public class Food {
     private Integer id;
     private String name;
-    private double price;
+    private Double price;
 }
