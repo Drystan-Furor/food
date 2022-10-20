@@ -43,7 +43,8 @@ Watch the tutorial [here](https://www.youtube.com/watch?v=hoVUmn8ZCOo "Spring Bo
 - - Database
 > But it is easier to work backwards. If you start with controller and work your way down, all those functions don't exist and IntelliJ will make it red.
 > Start to make an input for database, build a service, then build a controler.
-15. Bind controller data to form
+15. Bind controller data to form [th:text="${food}"]
+16. Add validation, success and error messages
 
 
 

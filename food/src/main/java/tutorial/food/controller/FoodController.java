@@ -18,25 +18,34 @@ public class FoodController {
 
     @PostMapping("/home")
     public String addFood(Model model, Food food) { //get the model from the template
-        if (foodService.addFood(food) < 1) { //error handling
+        int result = foodService.addFood(food);
+
+        if (food.getPrice() > 100) { //error handling
             model.addAttribute(
-                    "errorMessag",
+                    "errorMessage",
+                    String.format("Could not add %s, dude. It's too much clams" , food.getName()));
+        } else if (result < 1) { //error handling
+            model.addAttribute(
+                    "errorMessage",
                     String.format("Could not add %s", food.getName()));
+        } else {
+            model.addAttribute("successMessage",
+                    String.format("Successfully added %s", food.getName()));
         }
-        model.addAttribute("succesMessage",
-                String.format("Succesfully added %s", food.getName()));
+
+        // this adds the array to the template.
+        Food[] foods = foodService.getFoods();
+        model.addAttribute("foods", foods);
         return "home";
     }
 
     @GetMapping("/home")
-    public String getHome(Model model) {
-        model.addAttribute("message", "Hello VIEW, this is Food Controller speaking.");
-
-        double price;
-        String name;
-        Food[] foods = foodService.getFoods();
+    // Food.food required because it's the GetMapping, but not used in this method
+    public String getHome(Model model, Food food) {
+        model.addAttribute("message", "Hello VIEW, this is Controller.");
 
         // this adds the array to the template.
+        Food[] foods = foodService.getFoods();
         model.addAttribute("foods", foods);
 
         return "home";
