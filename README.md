@@ -51,21 +51,24 @@ Watch the tutorial [here](https://www.youtube.com/watch?v=hoVUmn8ZCOo "Spring Bo
 # TRIVIA
 ## Abstraction Layers
 ```mermaid
-graph TD
-1{Controller / API Layer}
+flowchart TD
 
-a(Endpoint<br>Validate request<br>Call service<BR>Validate results<br>create HTTP Response)
-1--> |Functions|a
-1--> |Abstraction|x[Abstraction Level 1]
-x -->2{Service/ <br>DomainService Layer}
+subgraph Z[" "]
+direction LR
+  1[Controller/Api <br>Layer] --> B(Endpoint<br>Validate request<br>Call service<BR>Validate results<br>create HTTP Response)
+end
 
-b(Main Business Logic<br>Domain specific Logic<br>calls DAO:Database Access Object<br>other services<br>3rd party API's<br>)
-2--> |Functions|b
-2--> |Abstraction|Y[Abstraction Level 2]
-Y --> 3
+subgraph ZA[" "]
+direction LR
+    2[Service/ <br>DomainService Layer] --> b(Main Business Logic<br>Domain specific Logic<br>calls DAO:Database Access Object<br>other services<br>3rd party API's<br>)
+end
 
-3{Data Access Layer}
-c(Access to Database<BR>ORM: Object Relational Mapping)
-3--> |Functions|c
+subgraph ZB[" "]
+direction LR
+    3[Data Access Layer]-->c(Access to Database<BR>ORM: Object Relational Mapping)
+end
+
+Z --> ZA
+ZA --> ZB
 
 ```
