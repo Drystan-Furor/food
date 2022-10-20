@@ -13,6 +13,9 @@ public class FoodService {
         this.foodMapper = foodMapper;
     }
 
+    public int addFood(Food food){
+        return foodMapper.insertFood(food);
+    };
 
     public Food[] getFoods(){
 

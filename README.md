@@ -37,7 +37,13 @@ Watch the tutorial [here](https://www.youtube.com/watch?v=hoVUmn8ZCOo "Spring Bo
 11. H2 database Configuration
 12. create mapper to replace hardcoded array of foods
 13. FORM and POST Request
-
+14. INPUT into DB methods
+- - Controller
+- - Service
+- - Database
+> But it is easier to work backwards. If you start with controller and work your way down, all those functions don't exist and IntelliJ will make it red.
+> Start to make an input for database, build a service, then build a controler.
+15. Bind controller data to form
 
 
 
