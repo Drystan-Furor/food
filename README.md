@@ -1,9 +1,11 @@
 ### food
  Food List Application
 
+---
 >  Exploring Spring(Boot) with Thymeleaf.
 > In this Java Spring Boot and Thymeleaf Tutorial, you will be able to learn how to develop a simple Java Web app using Spring Boot MVC, Thymeleaf templating engine, Mybatis, and H2 in-memory database.
 
+---
 # Beginners Project
 Watch the tutorial [here](https://www.youtube.com/watch?v=hoVUmn8ZCOo "Spring Boot Thymeleaf Tutorial for beginners")
 
@@ -48,14 +50,6 @@ Watch the tutorial [here](https://www.youtube.com/watch?v=hoVUmn8ZCOo "Spring Bo
 16. Add validation, success and error messages
 
 ---
-# TODO
-- Field error in object 'food' on field 'price': rejected value [null];
-- Failed to convert from type [null] to type [double] for value 'null'; nested exception is java.lang.IllegalArgumentException: A null value cannot be assigned to a primitive type]]
-> WARN 19660 --- [nio-8080-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.ModelAttributeMethodProcessor$1: org.springframework.validation.BeanPropertyBindingResult: 1 errors<EOL>Field error in object 'food' on field 'price': rejected value [null]; codes [typeMismatch.food.price,typeMismatch.price,typeMismatch.double,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [food.price,price]; arguments []; default message [price]]; default message [Failed to convert value of type 'null' to required type 'double'; nested exception is org.springframework.core.convert.ConversionFailedException: Failed to convert from type [null] to type [double] for value 'null'; nested exception is java.lang.IllegalArgumentException: A null value cannot be assigned to a primitive type]]
-
-
-
-
 # TRIVIA
 ## Abstraction Layers
 ```mermaid
@@ -78,5 +72,4 @@ end
 
 Z --> ZA
 ZA --> ZB
-
 ```
